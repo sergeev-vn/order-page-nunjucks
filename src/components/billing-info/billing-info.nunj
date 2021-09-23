@@ -1,0 +1,113 @@
+<div class="billing">
+	<div class="billing__header form--padding-left">
+		<div class="billing__title">
+			<h3 class="title">Billing Information</h3>
+		</div>
+		<ul class="billing__controls">
+			<li class="billing__controls-item">
+				<label class="control control--radio">
+					<input type="radio" class="control__input" name="payment-mehod" checked="checked" />
+					<span class="control__box"></span>
+					Pay with Credit Card
+				</label>
+			</li>
+			<li class="billing__controls-item">
+				<label class="control control--radio">
+					<input type="radio" class="control__input" name="payment-mehod"/>
+					<span class="control__box"></span>
+					<img class="control__picture" src="{% inline 'paypal.svg' %}" alt="paypal" />
+				</label>
+			</li>
+		</ul>
+	</div>
+	<div class="billing__form">
+			<form class="form form--order" action="">
+				<div class="form__inputs-group billing-form">
+					<fieldset class="form__text-group">
+						<div class="form__group__item form__group__item--full">
+							{{
+								input({
+									name: 'Name on card',
+									placeholder: 'Placeholder Text'
+								})
+							}}
+						</div>
+						<div class="form__group__item">
+							{{
+								input({
+									name: 'Card number',
+									type: 'number'
+								})
+							}}
+						</div>
+						<div class="form__group__item">
+							{{
+								input({
+									type: 'number'
+								})
+							}}
+						</div>
+						<div class="form__group__item">
+							{{
+								input({
+									type: 'number'
+								})
+							}}
+						</div>
+						<div class="form__group__item">
+							{{
+								input({
+									type: 'number'
+								})
+							}}
+						</div>
+						<div class="form__group__item">
+							{{
+								input({
+									name: 'Expire date'
+								})
+							}}
+						</div>
+						<div class="form__group__item">
+							{{
+								input({
+									name: 'CVV code',
+									hint: 'Write CVV code!'
+								})
+							}}
+						</div>
+					</fieldset>
+				</div>
+				<fieldset class="form__checkbox-group form--padding-left">
+					<div class="form__checkbox-group-row">
+						<label class="control control--checkbox">
+							<input type="checkbox" class="control__input" name="payment-mehod" checked/>
+							<span class="control__box"></span>
+							Save information of this credit card
+						</label>
+					</div>
+					<div class="form__checkbox-group-row">
+						<label class="control control--checkbox">
+							<input type="checkbox" class="control__input" name="payment-mehod"/>
+							<span class="control__box"></span>
+							I accept the <a href="#" class="basic-link">terms and conditions</a> and the <a href="#" class="basic-link">Privacy Policies</a>
+						</label>
+					</div>
+				</fieldset>
+				<div class="form__buttons form--padding-left">
+					<div class="form__button-item">
+						{{button({
+							children: 'Back',
+							class: 'btn btn--size-m btn--white'
+						})}}
+					</div>
+					<div class="form__button-item">
+						{{button({
+							children: 'Check Out',
+							class: 'btn btn--size-m btn--blue'
+						})}}
+					</div>
+				</div>
+			</form>
+	</div>
+</div>

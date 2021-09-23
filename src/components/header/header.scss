@@ -1,0 +1,29 @@
+.header {
+	padding: 28px 0 21px;
+}
+.header__content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__search {
+	margin-right: 26px;
+}
+.header__controls {
+	display: flex;
+}
+.header__nav {
+	margin: 0 15px;
+
+	@include tablets {
+		display: none;
+	}
+}
+.header__humburger {
+	display: none;
+	margin-left: 26px;
+
+	@include tablets {
+		display: block;
+	}
+}

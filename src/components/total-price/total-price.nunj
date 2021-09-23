@@ -1,0 +1,50 @@
+<table class="total-price">
+	<tfoot class="total-price__footer">
+			<tr class="total-price__row">
+			<td class="total-price__cell">
+				<span class="total-price__name">Total</span>
+			</td>
+			<td class="total-price__cell">
+				<div class="total-price__amount">
+					<span class="total-price__currency">$</span>
+					<span class="total-price__number id="id="price-total">1 300</span>
+				</div>
+			</td>
+		</tr>
+	</tfoot>
+	<tbody class="total-price__body">
+		<tr class="total-price__row">
+			<td class="total-price__cell">
+				<span class="total-price__name">Subtotal</span>
+			</td>
+			<td class="total-price__cell">
+			<div class="total-price__amount">
+				<span class="total-price__currency">$</span>
+				<span class="total-price__number" id="price-subtotal">1 050</span>
+			</div>
+			</td>
+		</tr>
+		<tr class="total-price__row">
+			<td class="total-price__cell">
+				<span class="total-price__name">Tax</span>
+			</td>
+			<td class="total-price__cell">
+			<div class="total-price__amount">
+				<span class="total-price__currency">$</span>
+				<span class="total-price__number" id="price-tax">100</span>
+			</div>
+			</td>
+		</tr>
+		<tr class="total-price__row">
+			<td class="total-price__cell">
+				<span class="total-price__name">Shipping</span>
+			</td>
+			<td class="total-price__cell">
+			<div class="total-price__amount">
+				<span class="total-price__currency">$</span>
+				<span class="total-price__number" id="price-shipping">150</span>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,21 @@
+{% extends "../ext/base.nunj" %}
+{% import '../ext/_global.nunj' as global %}
+
+{% from global.paths.components + "menu/menu" + global.ext import menu %}
+{% from global.paths.components + "button/button" + global.ext import button %}
+{% from global.paths.components + "icon/icon" + global.ext import icon %}
+{% from global.paths.components + "logo/logo" + global.ext import logo %}
+{% from global.paths.components + "progress-bar/progress-bar" + global.ext import progressBar %}
+{% from global.paths.components + "basket-item/basket-item" + global.ext import basketItem %}
+{% from global.paths.components + "input/input" + global.ext import input %}
+
+{% block content %}
+	{# Header #}
+	{% include global.paths.components + "/header/header" + global.ext %}
+	<div class="container container--flex">
+		{# Main Content #}
+		{% include global.paths.components + "/main/main" + global.ext %}
+		{# Side Bar #}
+		{% include global.paths.components + "/aside/aside" + global.ext %}
+	</div>
+{% endblock content %}

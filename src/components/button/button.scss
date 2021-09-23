@@ -1,0 +1,57 @@
+.btn {
+	@extend .transition-active;
+	cursor: pointer;
+	padding: 0 30px;
+	text-align: center;
+
+	&:hover {
+		background-color: rgba(#000, 0.3);
+		color: rgba(#000, 0.8);
+		transition: none;
+	}
+
+	&:active {
+		background-color: rgba(#000, 0.25);
+		border-color: rgba(#000, 0.25);
+
+		.button__chevron-right {
+			transform: translateX(1px);
+			transition: none;
+		}
+	}
+
+	&--size-m {
+		height: 40px;
+		line-height: 40px;
+		border-radius: 3px;
+	}
+
+	&--white {
+		border: 1px solid $gray;
+		background-color: $white-bg;
+
+		&:hover {
+			color: $white-text;
+			border: 1px solid $gray;
+			border-color: #b2b2b2;
+		}
+	}
+
+	&--blue {
+		border: 1px solid $gray;
+		background-color: $blue-bg;
+		color: $white-text;
+
+		&:hover {
+			background-color: lighten($blue-bg, 10%);
+			border: 1px solid lighten($blue-bg, 10%);
+			color: $white-text;
+		}
+	}
+
+	&__chevron-right {
+		margin-left: 5px;
+		transition: transform 0.1s ease-out,
+			fill $default-transition-duration $default-transition-function;
+	}
+}

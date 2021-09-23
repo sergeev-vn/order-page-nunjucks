@@ -1,0 +1,10 @@
+<main class="main">
+	<div class="main__progressbar">
+		{{ progressBar(3) }}
+	</div>
+	<div class="main__content">
+		<div class="main__billing">
+			{% include global.paths.components + "/billing-info/billing-info" + global.ext %}
+		</div>
+	</div>
+</main>

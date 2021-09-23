@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: $main-text;
+	line-height: 1.2;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper__content {
+	flex: 1;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1600px;
+	width: 95.7%;
+
+	@include desktop1200 {
+		width: 94.5%;
+	}
+	@include tablets {
+		width: 92.5%;
+	}
+	&--flex {
+		display: flex;
+	}
+}
+
+.icon {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.section {
+	position: relative;
+}
+
+.border-bottom {
+	border-bottom: 1px solid $border;
+}
+.border-left {
+	border-left: 1px solid $border;
+}
+
+.title {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+button {
+	border: 0;
+	cursor: pointer;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+
+	li {
+		list-style: none;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+button[type='button'] {
+	cursor: pointer;
+	outline: none;
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	appearance: textfield;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+}

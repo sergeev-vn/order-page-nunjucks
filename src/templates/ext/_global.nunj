@@ -1,0 +1,4 @@
+{% set paths = {
+	"components": "../../components/"
+} %}
+{% set ext = ".nunj" %}

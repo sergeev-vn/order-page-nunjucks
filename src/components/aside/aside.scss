@@ -1,0 +1,32 @@
+.aside {
+	max-width: 374px;
+	width: 100%;
+
+	@include desktop1045 {
+		position: absolute;
+		z-index: 5;
+		background-color: $white-bg;
+		right: 0;
+		height: 100%;
+		transform: translateX(100%);
+		transition: transform 0.3s;
+
+		&.active {
+			transform: translateX(0);
+		}
+	}
+}
+.aside__item {
+	padding: 40px 5px 40px 36px;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid $border;
+	}
+
+	&--total-price {
+		padding-right: 20px;
+	}
+}
+.aside__item-title {
+	margin-bottom: 30px;
+}

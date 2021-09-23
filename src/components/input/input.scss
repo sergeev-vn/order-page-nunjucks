@@ -1,0 +1,30 @@
+.input__name {
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 2;
+	color: $dark-gray;
+	display: flex;
+	align-items: center;
+}
+.input__control {
+	display: block;
+	width: 100%;
+	padding: 8px 10px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	background-color: $slght-dark-gray;
+
+	&::placeholder {
+		color: $placeholder;
+	}
+}
+.input__control--size-m {
+	height: 40px;
+	line-height: 40px;
+	border-radius: 3px;
+}
+.input__hint {
+	margin-left: 5px;
+}

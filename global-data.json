@@ -1,0 +1,74 @@
+{
+	"menuItems": [
+		{
+			"name": "Women’s ",
+			"path": "#"
+		},
+		{
+			"name": "Men’s",
+			"path": "#"
+		},
+		{
+			"name": "Home",
+			"path": "#"
+		},
+		{
+			"name": "Travel",
+			"path": "#"
+		},
+		{
+			"name": "Beauty",
+			"path": "#"
+		},
+		{
+			"name": "Sale",
+			"path": "#"
+		}
+	],
+	"progressOrderItems": [
+		{
+			"name": "Account",
+			"path": "#"
+		},
+		{
+			"name": "Shipping",
+			"path": "#"
+		},
+		{
+			"name": "Billing",
+			"path": "#"
+		},
+		{
+			"name": "Review",
+			"path": "#"
+		}
+	],
+	"basketItems": [
+		{
+			"id": "1",
+			"name": "Amet minim mollit non deserunt ullamco est sit",
+			"img": "jacket.png",
+			"img2x": "jacket@2x.png",
+			"alt": "orange jacket",
+			"path": "#",
+			"price": "525",
+			"currency": "USD"
+		},
+		{
+			"id": "2",
+			"name": "Amet minim mollit non",
+			"img": "sneakers.png",
+			"img2x": "sneakers@2x.png",
+			"alt": "blue orange sneakers",
+			"path": "#",
+			"price": "525",
+			"currency": "USD"
+		}
+	],
+	"sequence": [
+		{
+			"path": "menu/menu",
+			"name": "menu"
+		}
+	]
+}

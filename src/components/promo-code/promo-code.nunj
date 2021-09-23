@@ -1,0 +1,19 @@
+<form class="promocode" action="">
+	<div class="promocode__input">
+		{{
+			input({
+				placeholder: 'Placeholder Text'
+			})
+		}}
+	</div>
+	<div class="promocode__button">
+			{{
+				button({
+					children: 'Apply',
+					type: 'submit',
+					class: 'btn btn--size-m btn--blue',
+					id: 'promocode-btn'
+			})
+		}}
+	</div>
+</form>

@@ -1,0 +1,9 @@
+{% macro progressBar(step=1) %}
+	<ul class="progressbar">
+		{% for item in progressOrderItems %}
+			<li class="progressbar__item{% if step == loop.index %} active{% endif %}{% if step > loop.index %} passed{% endif %}">
+				<a href="{{item.path}}" class="progressbar__link">{{item.name}}</a>
+			</li>
+		{% endfor %}
+	</ul>
+{% endmacro %}

@@ -1,0 +1,63 @@
+{% from "../../components/icon/icon.nunj" import icon %}
+
+{% macro basketItem(props) %}
+	<div class="basket-item">
+		<a href="{{props.path}}" class="basket-item__link-picture">
+			<div class="basket-item__picture">
+				<img
+					src="./assets/images/content/{{props.img}}"
+					{% if props.img2x %}
+						srcset="./assets/images/content/{{props.img2x}} 2x"
+					{% endif %}
+					alt="{{props.alt}}"
+					class="basket-item__picture-img"
+				>
+			</div>
+		</a>
+		<div class="basket-item__info">
+			<a href="{{props.path}}" class="basket-item__link-title">
+				<span class="basket-item__name">{{ props.name }}</span>
+			</a>
+			<div class="basket-item__footer">
+				<div class="basket-item__quantity">
+					<div class="basket-item__quantity-btn">
+						<button type="button" class="link-button" id="minus-btn">
+							{{ icon({
+								iconName: 'minus',
+								className: 'link-button__icon'
+								}, 21, 20)
+							}}
+						</button>
+					</div>
+					<div class="basket-item__quantity-counter">
+						<input type="number" value="1" class="basket-item__quantity-input" id="quantity-num">
+					</div>
+						<div class="basket-item__quantity-btn">
+						<button type="button" class="link-button" id="plus-btn">
+							{{ icon({
+								iconName: 'plus',
+								className: 'link-button__icon'
+								}, 21, 20)
+							}}
+						</button>
+					</div>
+				</div>
+				<div class="basket-item__total-price">
+          <span class="basket-item__price-currency">
+						{%- if props.currency == 'USD' -%}${%- endif -%}
+					</span>
+          <span class="basket-item__price-num" id="price-item">{{ props.price }}</span>
+        </div>
+			</div>
+		</div>
+		<div class="basket-item__delete">
+			<button type="button" class="link-button" id="remove-item-btn">
+				{{ icon({
+					iconName: 'cross',
+					className: 'link-button__icon'
+					}, 19, 18)
+				}}
+			</button>
+		</div>
+	</div>
+{% endmacro %}

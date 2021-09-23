@@ -1,0 +1,36 @@
+.main {
+	flex: 1;
+	padding: 60px 60px 60px 30px;
+
+	@include desktop1200 {
+		padding: 60px 50px 50px 18px;
+	}
+}
+.main__progressbar {
+	margin-bottom: 60px;
+	margin-left: -13.5%;
+	margin-right: -13.5%;
+
+	@include desktop1200 {
+		margin-left: -9.3%;
+		margin-right: -9.3%;
+	}
+
+	@include tablets {
+		margin-left: -9.5%;
+		margin-right: -13.5%;
+	}
+}
+.main__billing {
+	max-width: 934px;
+	display: flex;
+	justify-content: center;
+
+	@include desktop1200 {
+		justify-content: flex-start;
+	}
+
+	@include tablets {
+		display: block;
+	}
+}

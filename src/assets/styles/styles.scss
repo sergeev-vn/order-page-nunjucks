@@ -1,0 +1,35 @@
+// ======= GLOBAL =======
+@import 'constants';
+@import 'lib/base';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'layout';
+@import 'controls';
+
+// ======= COMPONENTS =======
+@import '../../components/header/header';
+@import '../../components/button/button';
+@import '../../components/logo/logo';
+@import '../../components/menu/menu';
+@import '../../components/progress-bar/progress-bar';
+@import '../../components/main/main';
+@import '../../components/control/control';
+@import '../../components/aside/aside';
+@import '../../components/basket-list/basket-list.scss';
+@import '../../components/basket-item/basket-item';
+@import '../../components/promo-code/promo-code.scss';
+@import '../../components/total-price/total-price.scss';
+@import '../../components/input/input.scss';
+
+// ======= PAGES =======
+@import 'pages/main';
+
+// ======= BLOCKS =======
+@import 'blocks/link-button';
+@import 'blocks/counter-cart';
+@import 'blocks/billing';
+@import 'blocks/form';
+@import 'blocks/billing-form';
+@import 'blocks/basic-link';
+@import 'blocks/hint.scss';

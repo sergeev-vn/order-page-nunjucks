@@ -1,0 +1,9 @@
+.basic-link {
+	color: $main-text;
+	border-bottom: 1px solid transparent;
+	@extend .transition-active;
+
+	&:hover {
+		border-color: currentColor;
+	}
+}

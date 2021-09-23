@@ -1,0 +1,30 @@
+{% macro input(props) %}
+	<label  class="input">
+		{% if props.name %}
+			<div class="input__name">{{- props.name -}}
+				{%- if props.hint -%}
+					<div class="input__hint">
+						<div class="hint" title="{{props.hint}}">?</div>
+					</div>
+				{%- endif -%}
+			</div>
+		{% endif %}
+		<input
+		{% if props.type %}
+			type="{{- props.type -}}"
+		{% else %}
+			type="text"
+		{% endif %}
+
+		{% if props.id %}
+			id="{{- props.id -}}"
+		{% endif %}
+
+		class="input__control input__control--size-m"
+		{% if props.placeholder %}
+			placeholder="{{ props.placeholder }}">
+		{% endif %}
+
+
+	</label>
+{% endmacro %}

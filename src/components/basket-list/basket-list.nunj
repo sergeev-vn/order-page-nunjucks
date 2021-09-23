@@ -1,0 +1,17 @@
+<ul class="basket-list">
+	{% for item in basketItems %}
+		<li class="basket-list__item">
+			{{
+				basketItem({
+					name: item.name,
+					img: item.img,
+					img2x: item.img2x,
+					alt: item.alt,
+					path: item.path,
+					price: item.price,
+					currency: item.currency
+				})
+			}}
+		</li>
+	{% endfor %}
+</ul>

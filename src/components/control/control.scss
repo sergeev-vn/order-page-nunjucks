@@ -1,0 +1,65 @@
+.control {
+	display: block;
+	position: relative;
+	padding-left: 1.9em;
+	cursor: pointer;
+	user-select: none;
+}
+
+.control:hover .control__input:checked + .control__box::after {
+	background-color: darken($blue-bg, 30%);
+}
+.control:hover .control__input:not(:checked) + .control__box {
+	background-color: #f5f5f5;
+}
+.control .control__input:checked + .control__box::after {
+	@extend .transition-active;
+}
+.control__input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+.control__box {
+	position: absolute;
+	left: 0;
+	margin-top: -0.1em;
+	width: 1.2em;
+	height: 1.2em;
+	box-shadow: 0 0 0 0.1em $gray;
+	background-color: $white-text;
+	@extend .transition-active;
+}
+.control--radio .control__box {
+	border-radius: 50%;
+}
+.control--radio .control__input:checked + .control__box::after {
+	content: '';
+	width: 0.6em;
+	height: 0.6em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: $blue-bg;
+	border-radius: 50%;
+}
+
+.control--checkbox .control__input:checked + .control__box::after {
+	content: '';
+	width: 0.6em;
+	height: 0.6em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: $blue-bg;
+}
+
+.control__picture {
+	position: relative;
+	top: -5px;
+	left: 6px;
+}

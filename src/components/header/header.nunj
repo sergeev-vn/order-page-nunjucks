@@ -1,0 +1,42 @@
+<header class="header border-bottom">
+	<div class="container">
+		<div class="header__content">
+			<div class="header__logo">
+				{{ logo() }}
+			</div>
+			<div class="header__nav">
+				{{ menu() }}
+			</div>
+			<div class="header__controls">
+				<div class="header__search">
+					<a href="#" class="link-button">
+						{{ icon({
+							iconName: 'magnifier',
+							className: 'link-button__icon'
+							}, 24, 24)
+						}}
+					</a>
+				</div>
+				<div class="header__cart">
+					<a href="#" class="link-button link-button--cart">
+						{{ icon({
+							iconName: 'cart',
+							className: 'link-button__icon'
+							}, 24, 21)
+						}}
+						<div class="counter-cart counter-cart--absolute">2</div>
+					</a>
+				</div>
+				<div class="header__humburger">
+					<a href="javascript:;" class="link-button" id="humburger">
+						{{ icon({
+							iconName: 'burger',
+							className: 'link-button__icon'
+							}, 29, 22)
+						}}
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

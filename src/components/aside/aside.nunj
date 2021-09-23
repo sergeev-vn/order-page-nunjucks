@@ -1,0 +1,27 @@
+
+<aside class="aside border-left">
+	{# My basket #}
+	<div class="aside__item">
+		<div class="aside__item-title">
+			<h5 class="title">My basket</h5>
+		</div>
+		<div class="aside__item-content">
+			{% include global.paths.components + "/basket-list/basket-list" + global.ext %}
+		</div>
+	</div>
+	{# Promo code #}
+	<div class="aside__item">
+		<div class="aside__item-title">
+			<h5 class="title">Promo code</h5>
+		</div>
+		<div class="aside__item-content">
+			{% include global.paths.components + "/promo-code/promo-code" + global.ext %}
+		</div>
+	</div>
+	{# Total price #}
+	<div class="aside__item aside__item--total-price">
+		<div class="aside__item-content">
+			{% include global.paths.components + "/total-price/total-price" + global.ext %}
+		</div>
+	</div>
+</aside>

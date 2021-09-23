@@ -1,0 +1,12 @@
+.billing__title {
+	margin-bottom: 43px;
+}
+.billing__controls {
+	display: flex;
+	margin-bottom: 38px;
+}
+.billing__controls-item {
+	&:not(:last-child) {
+		margin-right: 82px;
+	}
+}

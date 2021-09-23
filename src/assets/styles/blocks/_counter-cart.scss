@@ -1,0 +1,17 @@
+.counter-cart {
+	min-width: 13px;
+	min-height: 13px;
+	padding: 2px 3px 1px;
+	color: $white-text;
+	font-size: 10px;
+	line-height: 1;
+	background-color: $blue-bg;
+	border-radius: 50%;
+	@include center;
+
+	&--absolute {
+		position: absolute;
+		top: -6px;
+		right: -6px;
+	}
+}
