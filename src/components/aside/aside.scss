@@ -19,6 +19,9 @@
 .aside__item {
 	padding: 40px 5px 40px 36px;
 
+	@include tablets {
+		padding: 40px 25px 40px 36px;
+	}
 	&:not(:last-child) {
 		border-bottom: 1px solid $border;
 	}

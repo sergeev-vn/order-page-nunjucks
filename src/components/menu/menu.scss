@@ -6,3 +6,10 @@
 		margin-right: 30px;
 	}
 }
+.menu__link {
+	@extend .transition-active;
+	border-bottom: 1px solid transparent;
+	&:hover {
+		border-color: currentColor;
+	}
+}
