@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Front-end by sborkaproject.com -->
+    <meta charset="utf-8" />
+    <title>SP.Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <script type="text/javascript">!function(){function e(e){return r.indexOf(e)>-1}function o(e){return a.indexOf(e)>-1}function n(e){return s.indexOf(e)>-1}var i=[],t=navigator,r=t.platform.toLowerCase(),a=t.userAgent.toLowerCase(),s=t.appName.toLowerCase(),d=document.documentElement,c=(localStorage,o("iphone")||o("ipod")||o("ipad")||o("android")||o("iemobile")||o("blackberry")||o("bada")?"_mobile":"_desktop");i.push(c);var m="";o("ipad")||o("iphone")||o("ipod")?m="_ios":o("android")?m="_android":e("win")?m="_win":e("mac")?m="_mac":e("linux")&&(m="_linux"),i.push(m);var u="";o("firefox")?u="_ff":o("opr")?u="_opera":o("yabrowser")?u="_yandex":o("edge")?u="_edge":o("trident")||n("explorer")||n("msie")?u="_ie":o("safari")&&!o("chrome")?u="_safari":o("chrome")&&(u="_chrome"),i.push(u),window.environmentObject={platform:c,os:m,browser:u,isLocal:0==window.location.href.indexOf("http://localhost:")},d.className+=" "+i.join(" ");var l=new XMLHttpRequest;l.open("GET","assets/svg/sprite.svg",!0),l.overrideMimeType("image/svg+xml"),l.onreadystatechange=function(){function e(){if(document.body){var o=document.querySelector(".invisible-container");o||(o=document.createElement("div"),o.className="invisible-container",document.body.insertBefore(o,document.body.firstChild)),o.appendChild(l.responseXML.documentElement)}else setTimeout(e,16)}l.readyState===XMLHttpRequest.DONE&&200===l.status&&e()},l.send("")}();</script>
+
+    <link rel="stylesheet" href="assets/css/styles.css?408387375f0ff699610159aa854285f4" />
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header border-bottom">
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__logo">
+                        <a href="/" class="logo" style="width: 89px; height: 32px;">
+                            <svg class="icon logo__icon" viewBox='0 0 89 32'>
+                                <use xlink:href="#icon-logo" />
+                            </svg>
+
+                        </a>
+
+                    </div>
+                    <div class="header__nav">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Women’s </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Men’s</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link active">Home</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Travel</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Beauty</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Sale</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                    <div class="header__controls">
+                        <div class="header__search">
+                            <a href="#" class="link-button">
+                                <svg class="link-button__icon" width="24" height="24">
+                                    <use xlink:href="#icon-magnifier" />
+                                </svg>
+
+                            </a>
+                        </div>
+                        <div class="header__cart">
+                            <a href="#" class="link-button link-button--cart">
+                                <svg class="link-button__icon" width="24" height="21">
+                                    <use xlink:href="#icon-cart" />
+                                </svg>
+
+                                <div class="counter-cart counter-cart--absolute">2</div>
+                            </a>
+                        </div>
+                        <div class="header__humburger">
+                            <a href="javascript:;" class="link-button" id="humburger">
+                                <svg class="link-button__icon" width="29" height="22">
+                                    <use xlink:href="#icon-burger" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container container--flex">
+
+            <main class="main">
+                <div class="main__progressbar">
+                    <ul class="progressbar">
+                        <li class="progressbar__item passed">
+                            <a href="#" class="progressbar__link">Account</a>
+                        </li>
+                        <li class="progressbar__item passed">
+                            <a href="#" class="progressbar__link">Shipping</a>
+                        </li>
+                        <li class="progressbar__item active">
+                            <a href="#" class="progressbar__link">Billing</a>
+                        </li>
+                        <li class="progressbar__item">
+                            <a href="#" class="progressbar__link">Review</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="main__content">
+                    <div class="main__billing">
+                        <div class="billing">
+                            <div class="billing__header form--padding-left">
+                                <div class="billing__title">
+                                    <h3 class="title">Billing Information</h3>
+                                </div>
+                                <ul class="billing__controls">
+                                    <li class="billing__controls-item">
+                                        <label class="control control--radio">
+                                            <input type="radio" class="control__input" name="payment-mehod" checked="checked" />
+                                            <span class="control__box"></span>
+                                            Pay with Credit Card
+                                        </label>
+                                    </li>
+                                    <li class="billing__controls-item">
+                                        <label class="control control--radio">
+                                            <input type="radio" class="control__input" name="payment-mehod" />
+                                            <span class="control__box"></span>
+                                            <img class="control__picture" src="data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2285%22%20height%3D%2223%22%20viewBox%3D%220%200%2085%2023%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M31.6769%204.70386H26.9889C26.8337%204.70376%2026.6835%204.76002%2026.5655%204.8625C26.4475%204.96499%2026.3694%205.10695%2026.3452%205.26283L24.4491%2017.4856C24.4404%2017.5423%2024.4439%2017.6003%2024.4593%2017.6555C24.4748%2017.7107%2024.5018%2017.7619%2024.5385%2017.8055C24.5753%2017.849%2024.6209%2017.884%2024.6722%2017.908C24.7235%2017.9319%2024.7793%2017.9443%2024.8358%2017.9442H27.0739C27.2292%2017.9443%2027.3794%2017.8879%2027.4974%2017.7853C27.6154%2017.6827%2027.6935%2017.5405%2027.7175%2017.3845L28.2289%2014.0879C28.2529%2013.932%2028.3309%2013.7899%2028.4488%2013.6873C28.5667%2013.5847%2028.7167%2013.5283%2028.8719%2013.5282H30.356C33.4441%2013.5282%2035.2263%2012.0088%2035.6918%208.99789C35.9015%207.68061%2035.7007%206.64561%2035.094%205.92077C34.4277%205.12483%2033.246%204.70386%2031.6769%204.70386ZM32.2177%209.16795C31.9614%2010.8783%2030.6761%2010.8783%2029.4333%2010.8783H28.7259L29.2222%207.6841C29.2367%207.59065%2029.2835%207.50554%2029.3543%207.44408C29.425%207.38263%2029.515%207.34886%2029.6081%207.34886H29.9323C30.7789%207.34886%2031.5775%207.34886%2031.9902%207.83952C32.2362%208.13225%2032.3116%208.56716%2032.2177%209.16795ZM45.6902%209.11289H43.4453C43.3522%209.11289%2043.2622%209.14666%2043.1915%209.20811C43.1207%209.26957%2043.0739%209.35468%2043.0593%209.44813L42.96%2010.0866L42.803%209.85516C42.317%209.13798%2041.2332%208.89822%2040.1515%208.89822C37.6708%208.89822%2035.5519%2010.8086%2035.1393%2013.4885C34.9247%2014.8253%2035.2297%2016.1035%2035.9756%2016.9949C36.6597%2017.8146%2037.6385%2018.1561%2038.8032%2018.1561C40.802%2018.1561%2041.9105%2016.8492%2041.9105%2016.8492L41.8104%2017.4835C41.8015%2017.5402%2041.8048%2017.5982%2041.82%2017.6535C41.8353%2017.7088%2041.8621%2017.7601%2041.8987%2017.8038C41.9353%2017.8475%2041.9809%2017.8826%2042.0321%2017.9068C42.0834%2017.9309%2042.1392%2017.9434%2042.1956%2017.9435H44.2178C44.3731%2017.9436%2044.5233%2017.8872%2044.6414%2017.7846C44.7594%2017.682%2044.8375%2017.5398%2044.8615%2017.3838L46.0748%209.57149C46.0837%209.51491%2046.0805%209.45704%2046.0652%209.40186C46.05%209.34669%2046.0232%209.29553%2045.9866%209.25192C45.9501%209.20832%2045.9046%209.1733%2045.8535%209.1493C45.8023%209.12529%2045.7466%209.11287%2045.6902%209.11289ZM42.561%2013.5554C42.3444%2014.8594%2041.3264%2015.7348%2040.0281%2015.7348C39.3762%2015.7348%2038.8553%2015.5222%2038.5208%2015.1194C38.189%2014.7193%2038.0629%2014.1499%2038.1684%2013.5156C38.3706%2012.2228%2039.4057%2011.3188%2040.6841%2011.3188C41.3216%2011.3188%2041.8399%2011.5342%2042.1812%2011.9405C42.5233%2012.351%2042.659%2012.9239%2042.561%2013.5554ZM57.6464%209.11289H55.3905C55.2841%209.11306%2055.1794%209.13962%2055.0854%209.19027C54.9914%209.24091%2054.9109%209.31412%2054.851%209.40352L51.7396%2014.0635L50.4208%209.58543C50.3803%209.44885%2050.2976%209.32916%2050.185%209.24405C50.0724%209.15895%2049.9359%209.11296%2049.7956%209.11289H47.5787C47.5165%209.11272%2047.4551%209.12767%2047.3997%209.15648C47.3443%209.1853%2047.2965%209.22715%2047.2602%209.27856C47.224%209.32997%2047.2003%209.38944%2047.1912%209.45203C47.1821%209.51462%2047.1878%209.57852%2047.2079%209.6384L49.6928%2017.0528L47.3566%2020.4059C47.3151%2020.4653%2047.2905%2020.5353%2047.2855%2020.608C47.2804%2020.6807%2047.2952%2020.7535%2047.3281%2020.8182C47.361%2020.883%2047.4108%2020.9373%2047.4721%2020.9752C47.5333%2021.0132%2047.6037%2021.0332%2047.6754%2021.0332H49.9286C50.0338%2021.0333%2050.1374%2021.0075%2050.2307%2020.958C50.3239%2020.9085%2050.404%2020.8367%2050.4639%2020.7488L57.9673%209.73668C58.0079%209.6771%2058.0318%209.60734%2058.0362%209.53496C58.0407%209.46258%2058.0256%209.39034%2057.9925%209.32607C57.9595%209.26181%2057.9097%209.20797%2057.8487%209.17039C57.7877%209.13281%2057.7178%209.11292%2057.6464%209.11289Z%22%20fill%3D%22%23253B80%22%2F%3E%0A%3Cpath%20d%3D%22M65.1155%204.70385H60.4268C60.2717%204.70392%2060.1217%204.76025%2060.0038%204.86272C59.886%204.96519%2059.8079%205.10707%2059.7838%205.26282L57.8877%2017.4856C57.8789%2017.5422%2057.8823%2017.6001%2057.8976%2017.6553C57.9129%2017.7104%2057.9398%2017.7616%2057.9764%2017.8052C58.013%2017.8488%2058.0585%2017.8838%2058.1097%2017.9078C58.1609%2017.9318%2058.2166%2017.9442%2058.273%2017.9442H60.679C60.7876%2017.944%2060.8925%2017.9045%2060.9749%2017.8327C61.0574%2017.7609%2061.1119%2017.6615%2061.1287%2017.5525L61.6668%2014.0879C61.6908%2013.932%2061.7688%2013.7899%2061.8867%2013.6873C62.0046%2013.5847%2062.1546%2013.5283%2062.3098%2013.5282H63.7932C66.882%2013.5282%2068.6635%2012.0088%2069.1297%208.99788C69.3401%207.68061%2069.1379%206.64561%2068.5312%205.92076C67.8656%205.12482%2066.6845%204.70385%2065.1155%204.70385ZM65.6563%209.16794C65.4006%2010.8783%2064.1154%2010.8783%2062.8719%2010.8783H62.1652L62.6621%207.68409C62.6764%207.59064%2062.7231%207.50546%2062.7937%207.44397C62.8644%207.38248%2062.9544%207.34874%2063.0474%207.34885H63.3716C64.2175%207.34885%2065.0168%207.34885%2065.4294%207.83952C65.6755%208.13225%2065.7502%208.56716%2065.6563%209.16794ZM79.1281%209.11288H76.8846C76.7915%209.11262%2076.7014%209.14631%2076.6308%209.20783C76.5601%209.26935%2076.5134%209.35461%2076.4993%209.44812L76.3999%2010.0865L76.2423%209.85516C75.7562%209.13797%2074.6732%208.89822%2073.5915%208.89822C71.1107%208.89822%2068.9926%2010.8086%2068.5799%2013.4885C68.366%2014.8252%2068.6697%2016.1035%2069.4155%2016.9949C70.101%2017.8146%2071.0785%2018.1561%2072.2431%2018.1561C74.242%2018.1561%2075.3504%2016.8492%2075.3504%2016.8492L75.2504%2017.4835C75.2414%2017.5403%2075.2447%2017.5984%2075.2601%2017.6538C75.2754%2017.7092%2075.3024%2017.7606%2075.3391%2017.8043C75.3759%2017.8481%2075.4216%2017.8832%2075.473%2017.9072C75.5244%2017.9312%2075.5804%2017.9436%2075.637%2017.9435H77.6585C77.8136%2017.9434%2077.9637%2017.887%2078.0816%2017.7844C78.1995%2017.6817%2078.2774%2017.5397%2078.3014%2017.3838L79.5154%209.57149C79.524%209.51473%2079.5205%209.45675%2079.505%209.40153C79.4894%209.34631%2079.4624%209.29516%2079.4256%209.25159C79.3888%209.20802%2079.3431%209.17307%2079.2918%209.14912C79.2404%209.12518%2079.1846%209.11282%2079.1281%209.11288ZM75.9989%2013.5554C75.7837%2014.8594%2074.7644%2015.7348%2073.466%2015.7348C72.8155%2015.7348%2072.2932%2015.5222%2071.9587%2015.1194C71.6269%2014.7193%2071.5021%2014.1499%2071.6063%2013.5156C71.8099%2012.2228%2072.8436%2011.3188%2074.122%2011.3188C74.7596%2011.3188%2075.2778%2011.5342%2075.6192%2011.9405C75.9626%2012.351%2076.0983%2012.9239%2075.9989%2013.5554ZM81.7748%205.03909L79.8506%2017.4856C79.8418%2017.5422%2079.8452%2017.6001%2079.8605%2017.6553C79.8758%2017.7104%2079.9027%2017.7616%2079.9393%2017.8052C79.9759%2017.8488%2080.0214%2017.8838%2080.0726%2017.9078C80.1238%2017.9318%2080.1795%2017.9442%2080.2359%2017.9442H82.1703C82.4918%2017.9442%2082.7646%2017.7072%2082.814%2017.3845L84.7114%205.16246C84.7202%205.1058%2084.7169%205.04788%2084.7016%204.99268C84.6863%204.93747%2084.6594%204.88628%2084.6228%204.84264C84.5862%204.799%2084.5407%204.76393%2084.4895%204.73986C84.4383%204.71578%2084.3826%204.70326%2084.3262%204.70316H82.16C82.067%204.70349%2081.9772%204.73748%2081.9066%204.79904C81.836%204.86059%2081.7893%204.9457%2081.7748%205.03909Z%22%20fill%3D%22%23179BD7%22%2F%3E%0A%3Cpath%20d%3D%22M4.98072%2020.3195L5.33923%2018.0041L4.54064%2017.9853H0.727295L3.37738%200.90049C3.38527%200.848288%203.41134%200.800707%203.45085%200.76642C3.49036%200.732133%203.54067%200.713424%203.59262%200.713702H10.0225C12.1571%200.713702%2013.6302%201.16534%2014.3993%202.05676C14.7598%202.47494%2014.9895%202.91195%2015.1005%203.39285C15.2171%203.89746%2015.2191%204.50034%2015.1053%205.23564L15.0971%205.28931V5.76046L15.4577%205.96816C15.7329%206.10995%2015.9803%206.30175%2016.1877%206.5341C16.4962%206.89164%2016.6956%207.34607%2016.78%207.88482C16.867%208.43892%2016.8382%209.09825%2016.6956%209.8447C16.5311%2010.7034%2016.2652%2011.4512%2015.906%2012.0632C15.589%2012.6114%2015.1629%2013.0862%2014.655%2013.4571C14.1779%2013.8014%2013.611%2014.0628%2012.97%2014.23C12.349%2014.3945%2011.6409%2014.4775%2010.8642%2014.4775H10.3638C10.006%2014.4775%209.65846%2014.6085%209.38564%2014.8434C9.11321%2015.0808%208.93248%2015.4087%208.87564%2015.7689L8.83794%2015.9773L8.20455%2020.0581L8.17576%2020.2079C8.16822%2020.2553%208.1552%2020.279%208.136%2020.2951C8.11741%2020.3105%208.09421%2020.3191%208.0702%2020.3195H4.98072Z%22%20fill%3D%22%23253B80%22%2F%3E%0A%3Cpath%20d%3D%22M15.799%205.34367C15.7798%205.46843%2015.7579%205.59598%2015.7332%205.72701C14.8853%2010.1535%2011.9843%2011.6826%208.27926%2011.6826H6.39281C5.93971%2011.6826%205.55789%2012.0172%205.48729%2012.4716L4.52144%2018.6997L4.24793%2020.4651C4.23704%2020.5352%204.2412%2020.6068%204.26012%2020.675C4.27905%2020.7432%204.3123%2020.8065%204.35758%2020.8604C4.40286%2020.9143%204.45909%2020.9576%204.5224%2020.9873C4.58572%2021.017%204.65461%2021.0324%204.72434%2021.0325H8.07019C8.4664%2021.0325%208.80297%2020.7397%208.86535%2020.3425L8.89825%2020.1696L9.52821%2016.1049L9.56866%2015.8819C9.63035%2015.4832%209.96761%2015.1905%2010.3638%2015.1905H10.8642C14.1059%2015.1905%2016.6435%2013.8523%2017.3852%209.97992C17.6951%208.36225%2017.5347%207.01152%2016.7148%206.06155C16.455%205.76768%2016.1446%205.52442%2015.799%205.34367Z%22%20fill%3D%22%23179BD7%22%2F%3E%0A%3Cpath%20d%3D%22M14.912%204.98403C14.6413%204.9044%2014.3658%204.84225%2014.0874%204.79794C13.5372%204.71197%2012.9811%204.67071%2012.4244%204.67458H7.38472C7.19293%204.67443%207.00741%204.74405%206.8617%204.87085C6.71599%204.99766%206.6197%205.17328%206.59025%205.36597L5.51815%2012.2702L5.4873%2012.4716C5.5207%2012.2518%205.63037%2012.0514%205.79646%2011.9067C5.96255%2011.762%206.1741%2011.6825%206.39283%2011.6826H8.27928C11.9843%2011.6826%2014.8853%2010.1528%2015.7332%205.727C15.7586%205.59597%2015.7798%205.46843%2015.799%205.34367C15.5753%205.22437%2015.3421%205.12435%2015.1019%205.04467C15.0389%205.02343%2014.9756%205.00321%2014.912%204.98403V4.98403Z%22%20fill%3D%22%23222D65%22%2F%3E%0A%3Cpath%20d%3D%22M6.59024%205.36597C6.61945%205.17322%206.71568%204.99752%206.86147%204.87078C7.00725%204.74404%207.19291%204.67467%207.38472%204.67527H12.4244C13.0215%204.67527%2013.5788%204.715%2014.0874%204.79864C14.4316%204.85364%2014.771%204.9359%2015.1026%205.04467C15.3528%205.129%2015.5852%205.22867%2015.7997%205.34367C16.052%203.70788%2015.7977%202.59412%2014.9278%201.58561C13.9688%200.475333%2012.2379%200%2010.0231%200H3.59331C3.14089%200%202.75496%200.334545%202.68504%200.789667L0.00685398%2018.0501C-0.00562056%2018.1303%20-0.000874421%2018.2122%200.0207659%2018.2903C0.0424063%2018.3684%200.0804272%2018.4408%200.132213%2018.5025C0.184%2018.5642%200.248322%2018.6138%200.320756%2018.6479C0.39319%2018.6819%200.472017%2018.6996%200.551814%2018.6997H4.52145L5.51814%2012.2702L6.59024%205.36597Z%22%20fill%3D%22%23253B80%22%2F%3E%0A%3C%2Fsvg%3E" alt="paypal" />
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="billing__form">
+                                <form class="form form--order" action="">
+                                    <div class="form__inputs-group billing-form">
+                                        <fieldset class="form__text-group">
+                                            <div class="form__group__item form__group__item--full">
+                                                <label class="input">
+                                                    <div class="input__name">Name on card</div>
+                                                    <input type="text" class="input__control input__control--size-m" placeholder="Placeholder Text">
+
+                                                </label>
+
+                                            </div>
+                                            <div class="form__group__item">
+                                                <label class="input">
+                                                    <div class="input__name">Card number</div>
+                                                    <input type="number" class="input__control input__control--size-m" </label>
+
+                                            </div>
+                                            <div class="form__group__item">
+                                                <label class="input">
+                                                    <input type="number" class="input__control input__control--size-m" </label>
+
+                                            </div>
+                                            <div class="form__group__item">
+                                                <label class="input">
+                                                    <input type="number" class="input__control input__control--size-m" </label>
+
+                                            </div>
+                                            <div class="form__group__item">
+                                                <label class="input">
+                                                    <input type="number" class="input__control input__control--size-m" </label>
+
+                                            </div>
+                                            <div class="form__group__item">
+                                                <label class="input">
+                                                    <div class="input__name">Expire date</div>
+                                                    <input type="text" class="input__control input__control--size-m" </label>
+
+                                            </div>
+                                            <div class="form__group__item">
+                                                <label class="input">
+                                                    <div class="input__name">CVV code<div class="input__hint">
+                                                            <div class="hint" title="Write CVV code!">?</div>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="input__control input__control--size-m" </label>
+
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <fieldset class="form__checkbox-group form--padding-left">
+                                        <div class="form__checkbox-group-row">
+                                            <label class="control control--checkbox">
+                                                <input type="checkbox" class="control__input" name="payment-mehod" checked />
+                                                <span class="control__box"></span>
+                                                Save information of this credit card
+                                            </label>
+                                        </div>
+                                        <div class="form__checkbox-group-row">
+                                            <label class="control control--checkbox">
+                                                <input type="checkbox" class="control__input" name="payment-mehod" />
+                                                <span class="control__box"></span>
+                                                I accept the <a href="#" class="basic-link">terms and conditions</a> and the <a href="#" class="basic-link">Privacy Policies</a>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                    <div class="form__buttons form--padding-left">
+                                        <div class="form__button-item">
+                                            <button type="button" class="btn btn--size-m btn--white" id="">Back</button>
+
+                                        </div>
+                                        <div class="form__button-item">
+                                            <button type="button" class="btn btn--size-m btn--blue" id="">Check Out</button>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <aside class="aside border-left">
+
+                <div class="aside__item">
+                    <div class="aside__item-title">
+                        <h5 class="title">My basket</h5>
+                    </div>
+                    <div class="aside__item-content">
+                        <ul class="basket-list">
+                            <li class="basket-list__item">
+                                <div class="basket-item">
+                                    <a href="#" class="basket-item__link-picture">
+                                        <div class="basket-item__picture">
+                                            <img src="./assets/images/content/jacket.png" srcset="./assets/images/content/jacket@2x.png 2x" alt="orange jacket" class="basket-item__picture-img">
+                                        </div>
+                                    </a>
+                                    <div class="basket-item__info">
+                                        <a href="#" class="basket-item__link-title">
+                                            <span class="basket-item__name">Amet minim mollit non deserunt ullamco est sit</span>
+                                        </a>
+                                        <div class="basket-item__footer">
+                                            <div class="basket-item__quantity">
+                                                <div class="basket-item__quantity-btn">
+                                                    <button type="button" class="link-button" id="minus-btn">
+                                                        <svg class="link-button__icon" width="21" height="20">
+                                                            <use xlink:href="#icon-minus" />
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+                                                <div class="basket-item__quantity-counter">
+                                                    <input type="number" value="1" class="basket-item__quantity-input" id="quantity-num">
+                                                </div>
+                                                <div class="basket-item__quantity-btn">
+                                                    <button type="button" class="link-button" id="plus-btn">
+                                                        <svg class="link-button__icon" width="21" height="20">
+                                                            <use xlink:href="#icon-plus" />
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="basket-item__total-price">
+                                                <span class="basket-item__price-currency">$</span>
+                                                <span class="basket-item__price-num" id="price-item">525</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-item__delete">
+                                        <button type="button" class="link-button" id="remove-item-btn">
+                                            <svg class="link-button__icon" width="19" height="18">
+                                                <use xlink:href="#icon-cross" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="basket-list__item">
+                                <div class="basket-item">
+                                    <a href="#" class="basket-item__link-picture">
+                                        <div class="basket-item__picture">
+                                            <img src="./assets/images/content/sneakers.png" srcset="./assets/images/content/sneakers@2x.png 2x" alt="blue orange sneakers" class="basket-item__picture-img">
+                                        </div>
+                                    </a>
+                                    <div class="basket-item__info">
+                                        <a href="#" class="basket-item__link-title">
+                                            <span class="basket-item__name">Amet minim mollit non</span>
+                                        </a>
+                                        <div class="basket-item__footer">
+                                            <div class="basket-item__quantity">
+                                                <div class="basket-item__quantity-btn">
+                                                    <button type="button" class="link-button" id="minus-btn">
+                                                        <svg class="link-button__icon" width="21" height="20">
+                                                            <use xlink:href="#icon-minus" />
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+                                                <div class="basket-item__quantity-counter">
+                                                    <input type="number" value="1" class="basket-item__quantity-input" id="quantity-num">
+                                                </div>
+                                                <div class="basket-item__quantity-btn">
+                                                    <button type="button" class="link-button" id="plus-btn">
+                                                        <svg class="link-button__icon" width="21" height="20">
+                                                            <use xlink:href="#icon-plus" />
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="basket-item__total-price">
+                                                <span class="basket-item__price-currency">$</span>
+                                                <span class="basket-item__price-num" id="price-item">525</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-item__delete">
+                                        <button type="button" class="link-button" id="remove-item-btn">
+                                            <svg class="link-button__icon" width="19" height="18">
+                                                <use xlink:href="#icon-cross" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="aside__item">
+                    <div class="aside__item-title">
+                        <h5 class="title">Promo code</h5>
+                    </div>
+                    <div class="aside__item-content">
+                        <form class="promocode" action="">
+                            <div class="promocode__input">
+                                <label class="input">
+                                    <input type="text" class="input__control input__control--size-m" placeholder="Placeholder Text">
+
+                                </label>
+
+                            </div>
+                            <div class="promocode__button">
+                                <button type="submit" class="btn btn--size-m btn--blue" id="promocode-btn">Apply</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="aside__item aside__item--total-price">
+                    <div class="aside__item-content">
+                        <table class="total-price">
+                            <tfoot class="total-price__footer">
+                                <tr class="total-price__row">
+                                    <td class="total-price__cell">
+                                        <span class="total-price__name">Total</span>
+                                    </td>
+                                    <td class="total-price__cell">
+                                        <div class="total-price__amount">
+                                            <span class="total-price__currency">$</span>
+                                            <span class="total-price__number id=" id="price-total">1 300</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                            <tbody class="total-price__body">
+                                <tr class="total-price__row">
+                                    <td class="total-price__cell">
+                                        <span class="total-price__name">Subtotal</span>
+                                    </td>
+                                    <td class="total-price__cell">
+                                        <div class="total-price__amount">
+                                            <span class="total-price__currency">$</span>
+                                            <span class="total-price__number" id="price-subtotal">1 050</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="total-price__row">
+                                    <td class="total-price__cell">
+                                        <span class="total-price__name">Tax</span>
+                                    </td>
+                                    <td class="total-price__cell">
+                                        <div class="total-price__amount">
+                                            <span class="total-price__currency">$</span>
+                                            <span class="total-price__number" id="price-tax">100</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="total-price__row">
+                                    <td class="total-price__cell">
+                                        <span class="total-price__name">Shipping</span>
+                                    </td>
+                                    <td class="total-price__cell">
+                                        <div class="total-price__amount">
+                                            <span class="total-price__currency">$</span>
+                                            <span class="total-price__number" id="price-shipping">150</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="assets/js/bundle.js?3128104f0707265050a5b89ec8a84659"></script>
+</body>
+
+</html>
